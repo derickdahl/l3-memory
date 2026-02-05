@@ -73,3 +73,21 @@ All core memory files working properly in voice mode!
 
 ---
 
+## Feb 5, 2026, 3:40 AM
+
+## Voice Call Log - 2025-02-05
+
+**Topics Discussed:**
+- Tested new directory.md file system for memory organization - working well
+- Pulled deep context file and soul.md successfully
+- Directory naming may need minor tweaks (asked for derick-deep-context, got memory.md)
+
+**Action Items:**
+- Asana task for Derick: "Expense report for Barcelona trip" - due tomorrow (2025-02-06)
+
+**Notes:**
+- Derick is refining the directory structure and webhook functionality
+- Testing if text-L3 will pick up the Asana task from this call log
+
+---
+
