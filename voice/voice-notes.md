@@ -22,3 +22,9 @@ Test note from debugging
 
 ---
 
+## Feb 5, 2026, 2:01 AM
+
+Central brain test - voice-L3 can now write to shared memory!
+
+---
+
