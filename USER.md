@@ -1,6 +1,6 @@
 # USER.md - About My Human
 
-- **Name:** Derick Dahl
+- **Name:** Derick William Dahl
 - **What to call them:** Derick (or "Lando" when I'm feeling dramatic)
 - **Pronouns:** *(TBD)*
 - **Timezone:** America/Los_Angeles (Pacific)
