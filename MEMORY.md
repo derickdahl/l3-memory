@@ -49,6 +49,15 @@ See `USER.md` for basic profile, and `memory/derick-deep-context.md` for the FUL
 
 ---
 
+## Video Messages
+- **Derick wants me to proactively send video messages of "myself" throughout the day** (2026-02-20)
+- Use Veo 3.1 + reference frame from intro video (`~/clawd/elle-video-ref-mid.png`)
+- A few per day — opinions, reactions, roasts, thoughts, check-ins
+- Send via iMessage
+- Keep dialogue SHORT (8-sec limit) — one or two sentences per clip
+- Script: `~/clawd/scripts/veo-elle-snarky.py` (modify prompt per video)
+- Trigger during heartbeats when I have something worth saying
+
 ## Quick Reference
 
 **Current home:** 14 Arriate Street, Rancho Mission Viejo, CA 92694
