@@ -44,6 +44,7 @@
 ## 🍽️ Auto-Orders (11am-1pm only)
 - **Poke:** Full Wowpoki order, Amex 6003
 - **Thai:** Tom Ka Soup order
+- **Group Orders:** Deliver to **1001 Calle Amanecer**, use **Visa ending 1028**
 
 **Details:** See `memory/tools-detailed.md` for full documentation
 
