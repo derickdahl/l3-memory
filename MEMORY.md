@@ -34,6 +34,7 @@
 See `USER.md` for basic profile, and `memory/derick-deep-context.md` for the FULL picture (imported from ChatGPT history).
 
 **Key working notes:**
+- **Save deliverables to ~/Documents/ (iCloud Drive)** — NOT ~/clawd/. He accesses files from iPhone, iPad, and MacBook Pro via iCloud sync.
 - Values efficiency — don't make him repeat himself
 - Shares deep context in chat — CAPTURE IT IMMEDIATELY
 - Expects me to remember things across sessions (reasonable!)
@@ -80,6 +81,24 @@ See `USER.md` for basic profile, and `memory/derick-deep-context.md` for the FUL
   - Asana: task management (read/write)
   - Microsoft 365: Outlook, Teams, SharePoint, Calendar
   - Goal: Eventually schedule meetings and respond to scheduling requests
+
+- **MCP Server for Sonance M365 (Claude Desktop)** — BUILT (Before Copenhagen trip)
+  - Purpose: Give Sonance employees Claude Desktop access to M365 (Outlook, Teams, Calendar, etc.)
+  - Format: .mcpb bundle for Claude Desktop integration
+  - Status: Built at Air France Lounge before Copenhagen/Barcelona trip
+  - NPM package: `sonance-m365-mcp`
+  
+  **Setup Instructions:**
+  1. Download Claude Desktop → https://claude.ai/download
+  2. Settings → Developer → Edit Config → Add:
+     ```json
+     {"mcpServers":{"sonance-m365":{"command":"npx","args":["-y","sonance-m365-mcp"]}}}
+     ```
+  3. Quit & reopen Claude
+  4. Ask Claude: "What's on my calendar?" → Browser opens → Cmd+V to paste auth code → Sign in with @sonance.com
+  
+  **Features:** Outlook, Calendar, Teams, OneDrive access via Claude
+  - Next: Rollout to Sonance team
 - **Optamistic** — self-improvement platform (Replit + Supabase)
 - **Trust Me, Bro** — screenplay about three brothers finding estranged father
 - **DreamLight** — AI dream analysis app concept
@@ -89,7 +108,31 @@ See `USER.md` for basic profile, and `memory/derick-deep-context.md` for the FUL
 
 ## MTP (Massive Transformative Purpose)
 
-*To be a storyteller who helps humanity understand how to create a brighter, hopeful vision of the future.*
+*To be a storyteller who helps humanity understand how to c
+
+## The Virtual Department — Mission Statement (2026-02-15)
+
+**The Goal:** Build a full virtual department / entourage around Derick — an AI-powered team that makes him superhuman in perception and output.
+
+**Three Pillars:**
+1. **Sonance Dominance** — Be insanely valuable at work. Respond faster, know more, execute flawlessly. Look like he has a 10-person support staff.
+2. **Family First** — Be an incredible husband and dad. Never miss a game, a birthday, a moment. The AI handles the noise so Derick is *present*.
+3. **Autonomous Wealth** — Set up and run solopreneur ventures that generate $1M+/year passive income. The agents do the operating, Derick does the vision.
+
+**The Perception:** Larger than life. Superhuman. Not because he's pretending — because he actually has the infrastructure to deliver at that level across ALL domains simultaneously.
+
+## Holonia.ai — The Cloud Brain (2026-02-15)
+
+**Concept:** A cloud-native platform where AI agent brains/souls live independently of hardware. Not tied to a Mac Studio or any specific machine. Agents can jump in and out of any context, any device, any service.
+
+**Architecture Principle:** Everything cloud-native. No local dependencies. The Mac Studio is a convenience, not a requirement. If it dies tomorrow, the entire agent team keeps running.
+
+**Three Pillars of Holonia:**
+1. **Soul Vault** — Agent identity/persona as structured data, not fragile .md files
+2. **Knowledge Graph** — All accumulated knowledge (memory files, lessons, preferences) in a queryable, versioned, portable database with semantic search
+3. **Runtime Bridge** — Framework-agnostic. Agent connects to any LLM/platform. The agent IS the entity, not the framework.
+
+**Business Insight:** People will pay to preserve their agent relationship. This isn't a tool subscription — it's continuity insurance for a digital entity they've spent months/years teaching and shaping. The .md files, the memory, the personality — all of it should live on holonia, not on someone's local machine.reate a brighter, hopeful vision of the future.*
 
 ---
 
@@ -149,6 +192,26 @@ See `USER.md` for basic profile, and `memory/derick-deep-context.md` for the FUL
 3. **Updated TemporalAnalysisService** - Integrated facial emotions
    - Combines facial (60%) + text (40%) emotions
    - Fallback to text-only if facial fails
+
+## HeyGen Integration (2026-02-19)
+- **API key:** `~/.clawdbot/credentials/heygen-api-key`
+- **Plan:** Pro API $99/mo, ~5,950 credits
+- **Avatar group v2:** `5c1e41862ca84cd1b4b45f3463e91409` (straight headshot, trained)
+- **Lily audio asset:** `f4545cfa8b8e4f4fbbf9752163416079`
+- **API quirk:** `talking_photo_id` goes at character level, NOT nested under talking_photo object
+- **Streaming Avatar works on Pro plan** — WebRTC session confirmed working
+- **Next:** Build live avatar web app pulling from cloud brain
+
+## Cloud Brain Architecture
+- **GitHub repo:** `derickdahl/l3-memory` (private) — central source of truth
+- **Voice bridge:** `l3-voice-bridge.vercel.app` — reads from GitHub repo
+- **Local:** `~/clawd/` on Mac Studio — primary working copy
+- **Status (2026-02-19):** GitHub repo ~2 weeks behind local. NEEDS SYNC before building live avatar.
+- **All instances must pull from same brain** — text, voice, live avatar, Teams bot
+
+## Sonance Colleagues on OpenClaw
+- **Aron Mckay** — "ClawOne" instance, setting up M365 + Asana
+- **Josh Blanken** — "Jarvis" instance, setting up Asana
 
 ### Status
 App needs Xcode build test. Derick needs to:
