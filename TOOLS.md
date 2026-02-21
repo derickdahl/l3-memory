@@ -8,6 +8,10 @@
 **Helper:** `~/.clawdbot/scripts/msgraph.sh token|call`
 **Permissions:** Mail, Calendar, Chat, Files
 
+### OpenAI
+**Key:** `~/.clawdbot/credentials/openai-api-key`
+**Used for:** GPT-4o-audio accent scoring in video pipeline
+
 ### Asana (Tasks)
 **Token:** `~/.clawdbot/credentials/asana-token`
 **Workspace:** 1201171894258423
